@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  postgres:
+    image:  postgres:latest
+    container_name: PostgresDB
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: dockpass2024
+      POSTGRES_DB: dbVinyl
+    ports:
+      - "5432:5432"
+    volumes:
+      - C:/Docker/postgresDB:/var/lib/postgresql/data
+

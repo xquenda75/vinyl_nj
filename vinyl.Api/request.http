@@ -1,0 +1,43 @@
+get http://localhost:3000/Health
+
+### Listar Albums
+get http://localhost:3000/albums
+
+### Listar Album por ID
+get http://localhost:3000/albums/2
+
+### Crear Album
+post http://localhost:3000/albums
+Content-Type: application/json
+
+{
+    "title": "Album Test XX",
+    "artist": "Artist XX",
+    "price": 1900
+}
+
+### Actualizar Album
+put http://localhost:3000/albums/34
+Content-Type: application/json
+
+{
+    "title": "Album Editado 2",
+    "artist": "Description Editado 2",
+    "price": 1
+}
+
+### Eliminar Album
+delete http://localhost:3000/albums/38
+
+
+### Login
+post http://localhost:3000/login
+Content-Type: application/json
+
+{
+    "UserName": "admin",
+    "Password": "pass"
+}
+
+### Listar Peliculas 
+get http://localhost:3000/movies
